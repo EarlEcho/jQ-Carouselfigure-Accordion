@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<title>世纪海航-产品列表</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="zh-CN" />
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background-color: #f7f7f7;
+				padding-top: 40px;
+			}
+			
+			.join-us-right {
+				width: 932px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.join-us-right .title {
+				background: #fff;
+				height: 50px;
+				line-height: 50px;
+				width: 100%;
+				font-size: 16px;
+				color: #505050;
+				cursor: pointer;
+				font-family: "Hiragino Sans GB";
+			}
+			
+			.join-us-right .title .job-name {
+				width: 450px;
+				display: inline-block;
+				padding-left: 24px;
+			}
+			
+			.join-us-right .title span {
+				color: #bcbcbc;
+			}
+			
+			.join-us-right .title .job-date {
+				width: 300px;
+				display: inline-block;
+				text-align: right;
+			}
+			
+			.join-us-right .content {
+				background: #fff;
+				height: 358px;
+				font-size: 14px;
+				font-family: "Hiragino Sans GB";
+				color: #505050;
+				padding: 20px 22px 20px 22px;
+				line-height: 34px;
+			}
+			
+			.join-us-right li {
+				height: 50px;
+				overflow: hidden;
+				margin-bottom: 14px;
+			}
+			
+			.join-us-right li.index-item {
+				height: 408px;
+			}
+		</style>
+		<div class="join-us-right">
+			<ul>
+				<li class="index-item">
+					<div class="title">
+						<p class="job-name">手风琴列表1</p>
+						<p class="job-date">2017.8.18</p>
+					</div>
+					<div class="content">
+						计算机基础知识：<br /> 1.计算机网络：http协议、tcp协议等... <br />2.操作系统：内存、CPU、GPU等... <br />3.数据结构：队列、栈、树、排序算法、搜索算法等... <br /> 4.数据库系统原理：sql语言、索引、ACID等... <br />5.算法分析与设计：算法术语、贪心、递归、分治、动态规划等... <br /> 6.面向对象/面向过程/函数式编程（函数式可能比较扯，可以忽略）：Java（面向对象）、C（面向过程）、Haskell(函数式编程) <br /> 7.blabla等等，除了个别专业方向还有各种的课程如：信息安全、计算机图形学、人工智能、通讯原理等...
+						<br />
+					</div>
+				</li>
+				<li class="">
+					<div class="title">
+						<p class="job-name">手风琴列表2</p>
+						<p class="job-date">2017.8.18</p>
+					</div>
+					<div class="content">
+						前端基础知识：<br /> 1.javascript基础：闭包、原型链等blabla... <br />2.html和css基础：语义化、新标签和废弃标签、css各种属性（用法）、css3动画硬件加速等blabla <br /> 3.javascript设计模式：单例模式、观察者模式、工厂模式（阅读threejs源码的时候发现很多地方都用到了设计模式，优化了性能）
+						<br /> 4.ES6/ES7（最近好像出了ES8，快扶我起来，学不动了(￣﹏￣)）：阮一峰的ES6教程
+						<br /> 5.构建工具：webpack/gulp/fis3 选一个或者webpack+gulp这样的搭配来学习<br /> 6.Nodejs：前端必备后端语言，因为推崇大前端（啥都干）
+					</div>
+				</li>
+				<li class="">
+					<div class="title">
+						<p class="job-name">手风琴列表3</p>
+						<p class="job-date">2017.8.18</p>
+					</div>
+					<div class="content">
+						1.根据一份文档，或者自己的一个想法，然后从前端开始一直做（可以连后端都做了），遇到问题独立解决；<br /> 2.经常思考代码可读性、复用性、性能问题；
+						<br /> 3.规范化代码（推荐使用eslint）； 4.版本控制(git、svn)； <br /> 5.独立部署上线、维护；
+					</div>
+				</li>
+				<li class="">
+					<div class="title">
+						<p class="job-name">手风琴列表4</p>
+						<p class="job-date">2017.8.18</p>
+					</div>
+					<div class="content">
+						前端基础知识：<br /> 1.javascript基础：闭包、原型链等blabla... <br />2.html和css基础：语义化、新标签和废弃标签、css各种属性（用法）、css3动画硬件加速等blabla <br /> 3.javascript设计模式：单例模式、观察者模式、工厂模式（阅读threejs源码的时候发现很多地方都用到了设计模式，优化了性能）
+						<br /> 4.ES6/ES7（最近好像出了ES8，快扶我起来，学不动了(￣﹏￣)）：阮一峰的ES6教程
+						<br /> 5.构建工具：webpack/gulp/fis3 选一个或者webpack+gulp这样的搭配来学习<br /> 6.Nodejs：前端必备后端语言，因为推崇大前端（啥都干）
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$(".join-us-right li .title").click(function() {
+					$(this).parent().animate({
+						height: 408
+					}, 500);
+					$(this).parent().siblings().animate({
+						height: 50
+					}, 500);
+				})
+			})
+		</script>
+
+	</body>
+
+</html>
