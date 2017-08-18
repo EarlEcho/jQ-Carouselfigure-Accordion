@@ -1,0 +1,53 @@
+.carousel-figure {
+	height: 560px;
+	width: 100%;
+}
+
+.carsoul-box {
+	height: 560px;
+	width: 100%;
+	margin: 0 auto;
+	position: static;
+}
+
+.ig {
+	height: 560px;
+	width: 100%;
+	position: absolute;
+}
+
+.ig img {
+	height: 560px;
+	width: 100%;
+}
+
+.carousel-tabs {
+	position: relative;
+	top: -40px;
+	width: 184px;
+	height: 10px;
+	margin: 0 auto;
+	text-align: center;
+	list-style: none;
+}
+
+.tab {
+	float: left;
+	text-align: center;
+	width: 36px;
+	height: 4px;
+	cursor: pointer;
+	overflow: hidden;
+	margin-right: 10px;
+	background-color: #d4d4d3;
+}
+
+.tab-index {
+	cursor: pointer;
+	background-color: #286ee6;
+}
+
+.tab:hover {
+	cursor: pointer;
+	background-color: #286ee6;
+}
